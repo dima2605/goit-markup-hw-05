@@ -317,6 +317,35 @@ p{
     margin-left: 30px;
 }
 
+.works-list .item{
+    position: relative;
+    box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+.works-box{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.works-text{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color:var(--white-text-color);
+}
+
+
+
 /* ----------------team----------------------------- */
 .masters-soc-item{
     width: 44px;
