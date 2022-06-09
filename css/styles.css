@@ -179,7 +179,8 @@ p{
 .current::after{
     content: "";
     position: absolute;
-    bottom: 0;
+    left: 0;
+    bottom: -1px;
   
     width: 100%;
     height: 4px;
@@ -187,7 +188,6 @@ p{
 
      background-color: var(--accent-color);
 
-    box-shadow: var(--box-shadow--accent);
     border-radius: 2px;
 
 }
@@ -201,7 +201,7 @@ p{
     width: 100%;
     height: 100%;
 
-    visibility: visible;
+    /* visibility: visible; */
     opacity: 1;
     transform: scale(1);
 
@@ -211,13 +211,17 @@ p{
     transition: opacity 250ms var(--time-function),transform 250ms var(--time-function);
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
     transform: scale(0.5);
-    
+
+
+        /* transition: opacity 2500ms var(--time-function), transform 2500ms var(--time-function); */
 }
+
+
 
 .modal{
     position: absolute;
@@ -231,6 +235,7 @@ p{
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--primary-background-color);
+
 }
 
 .close-btn{
@@ -249,7 +254,9 @@ p{
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--primary-background-color);
     cursor: pointer;
-    transition: box-shadow 250ms var(--time-function);
+
+    transition: box-shadow 250ms var(--time-function) ;
+
 }
 
 .close-btn:hover{
@@ -407,8 +414,6 @@ p{
 
 .works-list .item{
     position: relative;
-    box-shadow:var(--box-shadow--accent);
-    border: 1px solid #000000;
 }
 
 .works-box{
